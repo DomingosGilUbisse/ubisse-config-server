@@ -1,5 +1,12 @@
-server:
-  port: 8888
 spring:
   application:
-    name: ubisse-config-server
+    name: greeting-service
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
+greeting-service:
+  greeting: "Hola"
+  default-value: "Mundo"
